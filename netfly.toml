@@ -1,0 +1,7 @@
+[build]
+base = "."
+command = "yarn build"
+publish = "./build/"
+
+[build.enviroment]
+REACT_APP_GOOGLE_ID='90227753387-cjmpoqkt1daoqnneg8f8meuieglnqvgv.apps.googleusercontent.com'
