@@ -37,8 +37,8 @@ export function SubHeader() {
       )}
     </Menu>
     <Flex fontSize="xl">
-        <Link ml="300" href="/costumers-create">Crie sua conta</Link>
-        <Link ml="6" href="/products-create">Vender um produto</Link>
+        <Link ml="300" href="/costumerscreate">Crie sua conta</Link>
+        <Link ml="6" href="/productscreate">Vender um produto</Link>
         <Link ml="560">Contato</Link>
     </Flex>
   </Flex>

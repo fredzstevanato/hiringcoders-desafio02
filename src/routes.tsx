@@ -18,9 +18,9 @@ export function Routes() {
           <ProductsProvider>
             <Route path="/" exact component={Home}/>
             <Route path="/products" component={ProductTable} />
-            <Route path="/products-create" component={CreateProduct} />
+            <Route path="/productscreate" component={CreateProduct} />
             <Route path="/costumers" component={CostumersTable}/>
-            <Route path="/costumers-create" component={CreateCostumer} />
+            <Route path="/costumerscreate" component={CreateCostumer} />
           </ProductsProvider>
         </CostumersProvider> 
       </Switch>
