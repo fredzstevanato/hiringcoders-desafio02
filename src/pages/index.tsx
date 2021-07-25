@@ -34,7 +34,7 @@ export function Home() {
       setProductAll(productsStoraged);
     }
     loadStorageData()
-  }, [])
+  }, [loadProducts])
 
   useEffect(() => {
     console.log(productDetails)

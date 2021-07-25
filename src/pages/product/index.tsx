@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Product, useProducts } from "../../context/useProduct";
-import { Box, Button, Checkbox, Flex, Heading, Icon, Link, Spinner, Table, Tbody, Td, Text, Th, Thead, Tr, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Button, Checkbox, Flex, Heading, Icon, Link, Table, Tbody, Td, Text, Th, Thead, Tr } from "@chakra-ui/react";
 import { RiAddLine, RiDeleteBinLine, RiEditFill } from "react-icons/ri";
 import { Header } from "../../components/Header";
 
@@ -17,7 +17,7 @@ export function ProductTable() {
       setProductAll(productsStoraged);
     }
     loadStorageData()
-  }, [])
+  }, [loadProducts])
 
   return (
     <Box>

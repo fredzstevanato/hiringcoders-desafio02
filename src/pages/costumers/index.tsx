@@ -17,7 +17,7 @@ export function CostumersTable() {
       setCostumersAll(costumersStoraged);
     }
     loadStorageData()
-  }, [])
+  }, [loadCostumers])
 
   return (
     <Box>

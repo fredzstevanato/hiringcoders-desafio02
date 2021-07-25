@@ -1,4 +1,4 @@
-import { Flex, Link, Menu, MenuButton, MenuList, MenuItem, Button, Box, HStack, VStack } from "@chakra-ui/react";
+import { Flex, Link, Menu, MenuButton, MenuList, MenuItem, Button, Box } from "@chakra-ui/react";
 import { CgChevronDown  } from 'react-icons/cg'
 
 export function SubHeader() {

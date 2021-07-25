@@ -1,4 +1,4 @@
-import { Flex, Box, Heading, Divider, VStack, SimpleGrid, HStack, Button, Text, Select, Checkbox } from "@chakra-ui/react"
+import { Flex, Box, Heading, Divider, VStack, SimpleGrid, HStack, Button } from "@chakra-ui/react"
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { useMutation } from "react-query";
 

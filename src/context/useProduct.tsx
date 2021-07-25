@@ -54,10 +54,6 @@ export function ProductsProvider({ children }: ProductsProviderProps) {
     localStorage.setItem('@commerce-products', JSON.stringify(products))
   }
 
-  async function addCart() {
-    
-  }
-
   async function loadProducts() {
     try {
       const data = await localStorage.getItem('@commerce-products');
