@@ -1,7 +1,7 @@
 import { Avatar, Box, Button, Flex, Text } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { GoogleLogin } from "react-google-login";
+import { GoogleLogin, GoogleLoginResponse } from "react-google-login";
 
 interface ProfileProps {
   showProfileData?: boolean;
@@ -39,8 +39,8 @@ export function Profile({ showProfileData = true }: ProfileProps) {
     setUser(null);
   }
 
-  const responseGoogle = async (response: any) => {
-    const {name, email, imageUrl} = response.profileObj;
+  const responseGoogle = async (response: GoogleLoginResponse) => {
+    const { name, email, imageUrl} = response.profileObj;
   
    localStorage.setItem('@commerce-user', JSON.stringify({
      name, email, avatar: imageUrl
