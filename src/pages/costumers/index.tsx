@@ -19,6 +19,8 @@ export function CostumersTable() {
     loadStorageData()
   }, [loadCostumers])
 
+  console.log(costumersAll)
+
   return (
     <Box>
       <Header />

@@ -19,6 +19,8 @@ export function ProductTable() {
     loadStorageData()
   }, [loadProducts])
 
+  console.log(productAll)
+
   return (
     <Box>
       <Header />

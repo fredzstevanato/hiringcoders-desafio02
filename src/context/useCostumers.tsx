@@ -28,18 +28,21 @@ const CostumersContext = createContext<CostumerContextData>({} as CostumerContex
 export function CostumersProvider({ children }: CostumerProviderProps) {
   const [costumers, setCostumers] = useState<Costumer[]>([]);
 
-  async function createCostumers({name, address, avatar }: CostumerInput) {
+  async function createCostumers({name, address, avatar, email }: CostumerInput) {
     const costumer = {
       id: uuidV4(),
       name,
       address,
-      avatar
+      avatar,
+      email
     }
 
-    this.setCostumer([
+    setCostumers([
       ...costumers,
       costumer
     ]);
+
+    console.log('Aqui')
 
     localStorage.setItem('@commerce-costumer', JSON.stringify(costumers))
   }
