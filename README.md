@@ -3,10 +3,11 @@
 <h1 align="center">
     <a href="https://pt-br.reactjs.org/">🔗 React</a>
 </h1>
-<p align="center">Projeto desenvolvido no programa #hiringcoders, utilizando bootstrapped com react, typescript e chakra-ui. Foi utilizado uma interface com componentes reutilizaveis, e utiliznado conceitos de hooks</p>
+<p align="center">Projeto desenvolvido no programa #hiringcoders, utilizando bootstrapped com react, typescript e chakra-ui. Foi utilizado uma interface com componentes reutilizaveis, e utiliznado conceitos de hooks. Os dados são armazenados em localstorage, ou seja não serão persistidos em um banco de dados.</p>
 
 <p align="center">
  <a href="#objetivo">Objetivo</a> •
+ teste
  <a href="#roadmap">Roadmap</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#autor">Autor</a>
@@ -31,6 +32,20 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [React](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Chakra-ui](https://chakra-ui.com/)
+
+### Para testar em seu ambiente local
+
+É necessario ter as seguintes ferramentas instaladas:
+- git
+- node
+- yarn
+
+Após a instalação execute os seguintes comandos:
+- execute: git clone https://github.com/fredzstevanato/hiringcoders-desafio02.git
+- entre na pasta hiringcoders-desafio02
+- execute: yarn
+- yarn start
+- acesse o endereço: http://localhost:3000/
 
 ### Autor
 #autor
