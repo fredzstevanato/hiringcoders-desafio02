@@ -9,8 +9,6 @@
  <a href="#objetivo">Objetivo</a> •
  <a href="#roadmap">Roadmap</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
- <a href="#contribuicao">Contribuição</a> • 
- <a href="#licenc-a">Licença</a> • 
  <a href="#autor">Autor</a>
 </p>
 
@@ -19,12 +17,14 @@
 </h4>
 
 ### Features
+#roadmap
 
 - [x] Cadastro de usuário (somente para login-google)
 - [x] Cadastro de cliente (dados básico)
 - [x] Cadastro de produtos (dados básicos)
 
 ### 🛠 Tecnologias
+#tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -33,6 +33,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Chakra-ui](https://chakra-ui.com/)
 
 ### Autor
+#autor
 ---
 
 <a href="https://www.hiringcoders.com.br/">
