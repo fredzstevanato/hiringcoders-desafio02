@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 import { Product, useProducts } from "../../context/useProduct";
 import { Box, Button, Checkbox, Flex, Heading, Icon, Link, Table, Tbody, Td, Text, Th, Thead, Tr } from "@chakra-ui/react";
-import { RiAddLine, RiDeleteBinLine, RiEditFill } from "react-icons/ri";
+import { RiAddLine } from "react-icons/ri";
 import { Header } from "../../components/Header";
-
-
 
 export function ProductTable() {
   const [ productAll, setProductAll ] = useState<Product[]>([]);
@@ -19,8 +17,6 @@ export function ProductTable() {
     loadStorageData()
   }, [loadProducts])
 
-  console.log(productAll)
-
   return (
     <Box>
       <Header />
@@ -33,7 +29,7 @@ export function ProductTable() {
               Produtos
             </Heading>
 
-            <Link href="/product/create" passHref>
+            <Link href="/productscreate">
               <Button
                 as="a"
                 size="sm"
@@ -80,8 +76,8 @@ export function ProductTable() {
                           <Text fontSize="sm" color="gray.300">{product.price}</Text>
                         </Td>
                         <Td>
-                          <Button RightIcon={<Icon as ={RiDeleteBinLine} color="whiteAlpha.700" fontSize={30} />} />
-                          <Button RightIcon={<Icon as ={RiEditFill} color="whiteAlpha.700" fontSize={30} />} />
+                          <Button fontSize="3xl" color="green.500">+</Button>
+                          <Button fontSize="3xl" ml="2" color="red.500">-</Button>
                         </Td>
                       </Tr>
                     )

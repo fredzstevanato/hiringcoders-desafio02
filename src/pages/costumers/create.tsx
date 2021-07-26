@@ -1,4 +1,4 @@
-import { Flex, Box, Heading, Divider, VStack, SimpleGrid, HStack, Button } from "@chakra-ui/react"
+import { Flex, Box, Heading, Divider, VStack, SimpleGrid, HStack, Button, Link, Icon } from "@chakra-ui/react"
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { useMutation } from "react-query";
 
@@ -7,6 +7,7 @@ import { Input } from '../../components/Form/Input'
 import { useCostumer } from "../../context/useCostumers";
 
 import { queryClient } from "../../services/queryClient";
+import { RiFileListLine } from "react-icons/ri";
 
 
 type CreateCostumerFormData = {
@@ -56,6 +57,17 @@ export function CreateCostumer() {
           onSubmit={handleSubmit(handleCreateCostumer)}
         >
           <Heading size="lg" fontWeight="normal">Cadastrar Clientes</Heading>
+          <Link href="/costumers">
+              <Button
+                as="a"
+                size="sm"
+                fontSize="sm"
+                colorScheme="pink"
+                leftIcon={<Icon as={RiFileListLine} fontSize="20" />}
+              >
+                Listar
+              </Button>
+            </Link>
 
           <Divider my="6" borderColor="gray.700" />
 

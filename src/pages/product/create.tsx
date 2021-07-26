@@ -1,4 +1,4 @@
-import { Flex, Box, Heading, Divider, VStack, SimpleGrid, HStack, Button, Text, Select, Checkbox } from "@chakra-ui/react"
+import { Flex, Box, Link, Heading, Divider, VStack, SimpleGrid, HStack, Button, Text, Select, Checkbox, Icon } from "@chakra-ui/react"
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { useMutation } from "react-query";
 
@@ -7,6 +7,7 @@ import { Input } from '../../components/Form/Input'
 import { useProducts } from "../../context/useProduct";
 
 import { queryClient } from "../../services/queryClient";
+import { RiFileListFill } from "react-icons/ri";
 
 
 type CreateProductFormData = {
@@ -64,6 +65,17 @@ export function CreateProduct() {
           onSubmit={handleSubmit(handleCreateProduct)}
         >
           <Heading size="lg" fontWeight="normal">Cadastrar Produto</Heading>
+          <Link href="/products">
+              <Button
+                as="a"
+                size="sm"
+                fontSize="sm"
+                colorScheme="pink"
+                leftIcon={<Icon as={RiFileListFill} fontSize="20" />}
+              >
+                Listar
+              </Button>
+            </Link>
 
           <Divider my="6" borderColor="gray.700" />
 

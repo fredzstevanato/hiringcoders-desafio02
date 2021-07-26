@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useCostumer, Costumer } from "../../context/useCostumers";
 import { Avatar, Box, Button, Checkbox, Flex, Heading, Icon, Link, Table, Tbody, Td, Text, Th, Thead, Tr } from "@chakra-ui/react";
-import { RiAddLine, RiDeleteBinLine, RiEditFill } from "react-icons/ri";
+import { RiAddLine } from "react-icons/ri";
 import { Header } from "../../components/Header";
 
 
@@ -19,8 +19,6 @@ export function CostumersTable() {
     loadStorageData()
   }, [loadCostumers])
 
-  console.log(costumersAll)
-
   return (
     <Box>
       <Header />
@@ -33,7 +31,7 @@ export function CostumersTable() {
               Produtos
             </Heading>
 
-            <Link href="/costumer/create" passHref>
+            <Link href="/costumerscreate">
               <Button
                 as="a"
                 size="sm"
@@ -61,27 +59,27 @@ export function CostumersTable() {
                   </Tr>
                 </Thead>
                 <Tbody>
-                  {costumersAll.map(costumers => {
+                  {costumersAll.map(costumer => {
                     return (
-                      <Tr key={costumers.id}>
+                      <Tr key={costumer.id}>
                         <Td px={["4", "4", "6"]}>
                           <Checkbox colorScheme="pink" />
                         </Td>
                         <Td>
-                          <Text fontSize="sm" color="gray.300">{costumers.name}</Text>
+                          <Text fontSize="sm" color="gray.300">{costumer.name}</Text>
                         </Td>
                         <Td>
-                          <Text fontSize="sm" color="gray.300">{costumers.address}</Text>
+                          <Text fontSize="sm" color="gray.300">{costumer.address}</Text>
                         </Td>
                         <Td>
-                          <Text fontSize="sm" color="gray.300">{costumers.email}</Text>
+                          <Text fontSize="sm" color="gray.300">{costumer.email}</Text>
                         </Td>
                         <Td>
-                          <Avatar size="md" name={costumers.name} src={costumers.avatar} />
+                          <Avatar size="md" name={costumer.name} src={costumer.avatar} />
                         </Td>
                         <Td>
-                          <Button RightIcon={<Icon as ={RiDeleteBinLine} color="whiteAlpha.700" fontSize={30} />} />
-                          <Button RightIcon={<Icon as ={RiEditFill} color="whiteAlpha.700" fontSize={30} />} />
+                          <Button fontSize="3xl" color="green.500">+</Button>
+                          <Button fontSize="3xl" ml="2" color="red.500">-</Button>
                         </Td>
                       </Tr>
                     )

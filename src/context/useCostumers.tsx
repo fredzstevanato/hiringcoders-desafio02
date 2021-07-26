@@ -42,14 +42,12 @@ export function CostumersProvider({ children }: CostumerProviderProps) {
       costumer
     ]);
 
-    console.log('Aqui')
-
     localStorage.setItem('@commerce-costumer', JSON.stringify(costumers))
   }
 
   async function loadCostumers() {
-    try {
-      const data = await localStorage.getItem('@commerce-customer');
+    try {                                     
+      const data = await localStorage.getItem('@commerce-costumer');
       const costumersAll = data ? (JSON.parse(data) as Costumer) : {};
 
       const costumersStored = Object

@@ -7,7 +7,6 @@
 
 <p align="center">
  <a href="#objetivo">Objetivo</a> •
- teste
  <a href="#roadmap">Roadmap</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#autor">Autor</a>
